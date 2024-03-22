@@ -4,18 +4,22 @@
 
 // Typography
 
-p,
 h1,
 h2,
+em,
 h3,
 h4,
 h5,
-h6,
-em,
+h6, 
 div,
 li,
 span,
 strong {
+  color: var(--global-heading-color);
+}
+
+p
+{
   color: var(--global-text-color);
 }
 
@@ -288,7 +292,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
+    color: var(--global-heading-color);
 
     &:hover {
       color: var(--global-hover-color);
@@ -386,7 +390,9 @@ ul.task-list input[type="checkbox"] {
 
     a {
       i::before {
-        color: var(--global-text-color);
+        // color: var(--global-text-color);
+        // change it to blue
+        color: #001F5A;
         transition-property: all 0.2s ease-in-out;
       }
 
