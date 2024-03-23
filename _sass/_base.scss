@@ -391,8 +391,8 @@ ul.task-list input[type="checkbox"] {
     a {
       i::before {
         // color: var(--global-text-color);
-        // change it to blue
-        color: #001F5A;
+        // change it to heading color
+        color: var(--global-heading-color);
         transition-property: all 0.2s ease-in-out;
       }
 

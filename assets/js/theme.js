@@ -209,11 +209,13 @@ let determineComputedTheme = () => {
   let themeSetting = determineThemeSetting();
   if (themeSetting == "system") {
     const userPref = window.matchMedia;
-    if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    } else {
-      return "light";
-    }
+    // Default it to light mode as of now (working on dark mode; so a quick fix)
+    return "light";
+    // if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
+    //   return "dark";
+    // } else {
+    //   return "light";
+    // }
   } else {
     return themeSetting;
   }
